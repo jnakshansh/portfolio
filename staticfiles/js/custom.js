@@ -1,7 +1,12 @@
+// var preloader = document.getElementById('loader');
+// function myfunction(){
+//     preloader.style.display='none';
+// }
+
+
 
 $(window).load(function() {
-    jQuery('#all').click();
-    return false;
+    $('#loader').delay(1000).fadeOut('slow');
 });
 
 $(document).ready(function() {
@@ -36,19 +41,12 @@ $(document).ready(function() {
 	$(".progress-bar").each(function(){
 	each_bar_width = $(this).attr('aria-valuenow');
 	$(this).width(each_bar_width + '%');
-	});
+    });
+    
 	   
 	//  }  
 	});
 
-    function resizeText() {
-        var preferredWidth = 767;
-        var displayWidth = window.innerWidth;
-        var percentage = displayWidth / preferredWidth;
-        var fontsizetitle = 25;
-        var newFontSizeTitle = Math.floor(fontsizetitle * percentage);
-        $(".divclass").css("font-size", newFontSizeTitle)
-    }
     if ($('#main-nav ul li:first-child').hasClass('active')) {
         $('#main-nav').css('background', 'none');
     }
@@ -107,7 +105,7 @@ $(document).ready(function() {
 
 
         if (winWidth > 1024) {
-            columnNumb = 4;
+            columnNumb = 3;
         } else if (winWidth > 900) {
             columnNumb = 2;
         } else if (winWidth > 479) {
@@ -161,3 +159,5 @@ document.getElementById('').onclick = function() {
     section.className = 'wow lightSpeedIn';
     this.parentNode.insertBefore(section, this);
 };
+
+
