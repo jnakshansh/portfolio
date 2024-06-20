@@ -1,0 +1,10 @@
+dj-database-url==0.5.0
+Django==3.2.18
+gunicorn==20.1.0
+psycopg2==2.9.6
+python-http-client==3.3.7
+pytz==2023.3
+sendgrid==7.9.1
+sqlparse==0.4.4
+whitenoise==6.6.0
+decouple==0.0.7
